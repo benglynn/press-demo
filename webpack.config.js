@@ -9,8 +9,8 @@ module.exports = {
     devtool: 'source-map',
     plugins: [
         createPressWebpack({
-            markdown: path.join(__dirname, './markdown'),
-            templates: path.join(__dirname, './templates'),
+            markdownDirectory: path.join(__dirname, './markdown'),
+            templateDirectory: path.join(__dirname, './templates'),
             // extraContext:  { filters }
         }),
         new CleanWebpackPlugin({
