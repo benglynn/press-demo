@@ -4,7 +4,8 @@
   "description": "A minimal demonstration of static publishing with Webpack and Press.",
   "dependencies": {},
   "devDependencies": {
-    "@benglynn/press": "git+ssh://git@github.com/benglynn/press.git",
+    "@benglynn/press": "^1.0.0-beta.0",
+    "@benglynn/publish": "^1.0.3",
     "clean-webpack-plugin": "^3.0.0",
     "http-server": "^0.12.3",
     "webpack": "^4.43.0",
