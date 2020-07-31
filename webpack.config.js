@@ -1,7 +1,5 @@
 const path = require("path");
-const {
-  createPressWebpack: createTSPressWebpack,
-} = require("@benglynn/tspress");
+const { createPressWebpack } = require("@benglynn/press");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // const filters = require('./filters')
 
@@ -13,7 +11,7 @@ module.exports = {
   entry: { app: "./app/app.js" },
   devtool: "source-map",
   plugins: [
-    createTSPressWebpack(markdownDirectory, templateDirectory),
+    createPressWebpack(markdownDirectory, templateDirectory),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["**/*", "!.gitkeep"],
     }),

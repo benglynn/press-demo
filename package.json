@@ -2,10 +2,11 @@
   "name": "press-demo",
   "version": "0.0.1",
   "description": "A minimal demonstration of static publishing with Webpack and Press.",
-  "dependencies": {},
+  "dependencies": {
+    "@benglynn/press": "^1.1.0"
+  },
   "devDependencies": {
-    "@benglynn/press": "^1.0.0-beta.0",
-    "@benglynn/publish": "^1.0.3",
+    "@benglynn/publish": "^1.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "http-server": "^0.12.3",
     "webpack": "^4.43.0",
