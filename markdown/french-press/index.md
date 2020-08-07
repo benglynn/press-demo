@@ -9,14 +9,11 @@ tags:
 The French press is also known as a cafetière.
 
 ```js
-var hello = "there";
-weCanMake("coffee");
-const is = "this" + "really" + "working";
-function like() {
-    this.itIsEasy();
-}
-
-const theEnd();
+// making coffee with code
+const spoons = "Lavazza Rossa" * 3;
+const water = kettle.boil();
+press.add(coffee).add(water);
+setTimeout(() => {
+    press.pour();
+}, 1000*60*3);
 ```
-
-Well how about that?! Simple as that. Well I never.
