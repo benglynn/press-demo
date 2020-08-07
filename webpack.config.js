@@ -1,6 +1,7 @@
 const path = require("path");
 const { createPressWebpack } = require("@benglynn/press");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const filters = require('./filters')
 
 const markdownDirectory = path.join(__dirname, "./markdown");
@@ -10,10 +11,19 @@ module.exports = {
   mode: "development",
   entry: { app: "./app/app.js" },
   devtool: "source-map",
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+    ],
+  },
   plugins: [
     createPressWebpack(markdownDirectory, templateDirectory),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["**/*", "!.gitkeep"],
     }),
+    new MiniCssExtractPlugin({ filename: `[name].css` }),
   ],
 };
