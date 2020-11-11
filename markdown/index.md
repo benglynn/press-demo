@@ -1,8 +1,7 @@
 ---
 template: 'home.pug'
-headline: Home
+headline: Beverage vessels
+navName: Home
 ---
-
-# Beverage vessels
 
 Welcome!
