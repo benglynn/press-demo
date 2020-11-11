@@ -2,7 +2,8 @@ const path = require("path");
 const { createPressWebpack } = require("@benglynn/press");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const filters = require('./filters')
+// when we have https://github.com/benglynn/press/issues/35
+// const filters = require("./filters");
 
 const markdownDirectory = path.join(__dirname, "./markdown");
 const templateDirectory = path.join(__dirname, "./templates");
